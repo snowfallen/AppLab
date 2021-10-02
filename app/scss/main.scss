@@ -1,0 +1,107 @@
+@import'fonts.scss';
+main{
+    margin-top: 150px;
+    width: 100vw;
+    height: 100%;
+    .container-main-screan{
+        position: relative;
+        display: flex;
+        height: 851px;
+        &__trial{
+            display: flex;
+            justify-content: end;
+            height: 500px;
+            width: 50%;
+            #trial-box{
+                width: 66%;
+                display: flex;
+                flex-direction: column;
+                padding: 245px 0 0 0 ;
+                #choice-app{
+                    align-items: center;
+                    display: flex;
+                    height: 35px;
+                    width: 70%;
+                    border-radius: 40px;
+                    background-color: #f3f3f3;
+                    #star{  
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 50%;
+                        background-color: #FCAE61;
+                    }
+                    p{  
+                        margin: 0 auto;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: calc(10px + 6 * (100vw / 1600));
+                        color: black;
+                    }
+                }
+                #txt-info{
+                    h1{
+                        font-family: 'Poppins', sans-serif;
+                        font-size: calc(10px + 50 * (100vw / 1600));
+                        font-weight: 600;
+                        color: #242F51;
+                        padding: 20px 0 30px 0;
+                    }
+                    p{
+                        font-family: 'Poppins', sans-serif;
+                        font-size: calc(12px + 6 * (100vw / 1600));
+                        color: black;
+                        padding-bottom: 30px;
+                    }
+                }
+                #btn-trial{
+                    display: flex;
+                    #btn-tryfree2{
+                        padding: 16.5px 41px;
+                        background-color:#2500F9;
+                        border-radius: 40px;
+                        align-items: center;
+                        text-align: center;
+                        a{  
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 700;
+                            padding: 0;
+                            color:white;
+                        }
+                    }
+                    #btn-video{
+                        padding: 16.5px 41px;
+                        background-color:white;
+                        border-radius: 40px;
+                        align-items: center;
+                        text-align: center;
+                        a{  
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 700;
+                            padding: 0;
+                            color:#2500F9;
+                        }
+                    }
+                } 
+            }
+        }
+        &__phone{
+            height: 500px;
+            width: 50%;
+            #box-phone{
+                margin: 0 auto;
+                width: 75%;
+                height: 80%;
+            }
+        }
+        #bgi-main{
+            position: absolute;
+            z-index: -1;
+            top: 600px;
+            width: 100%;
+            height: 200px;
+            background-image: url('../img/bg-main-screan.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}

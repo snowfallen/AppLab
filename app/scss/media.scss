@@ -1,0 +1,103 @@
+@media(max-width:1440px){
+    main  .container-main-screan #trial-box{
+        width: 76%;
+    }
+}
+
+@media(max-width:1064px){
+    header {
+        margin: 43px;
+        width: 90%;
+    }
+    header #container-menu menu li a{
+        padding: 0 0 0 20px;
+    }
+    main  .container-main-screan {
+       height: 500px;
+    }
+    main  .container-main-screan #trial-box{
+        padding: 72.5px 0 0 0;
+    }
+    main  .container-main-screan__trial{
+       height: 350.5px;
+    }
+    main  .container-main-screan__phone{
+        height: 350.5px;
+     }
+     main  .container-main-screan #bgi-main{
+         top:400px
+     }
+     main  .container-main-screan__phone #box-phone img{
+        height: 500px;
+     }
+     main  .container-main-screan #trial-box #choice-app{
+        width: 85%;
+    }
+    main  .container-main-screan #trial-box #btn-trial #btn-video{
+        padding: 16.5px 21px;
+    }
+}
+@media(max-width:768px){
+    header {
+        margin: 0;
+    }
+    header #container-menu{
+        display: none;
+    }
+    header .burger{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    main{
+        margin-top: 67px;
+    }
+}
+@media(max-width:767px){
+    main  .container-main-screan__phone{
+       display: none;
+     }
+     main  .container-main-screan #trial-box{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    main  .container-main-screan__trial{
+        width: 70%;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+    main  .container-main-screan{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+    main  .container-main-screan #bgi-main{
+        top:250px
+    }
+    main  .container-main-screan #trial-box #btn-trial {
+        width: 100%;
+        display: flex;
+       justify-content: space-around;
+    }
+}
+@media(max-width:500px){
+    main  .container-main-screan__trial{
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media(max-width:320px){
+    main  .container-main-screan #trial-box #btn-trial #btn-video{
+        padding: 16.5px 11px;
+    }
+    main  .container-main-screan #trial-box #btn-trial #btn-tryfree2{
+        padding: 16.5px 11px;
+    }
+}

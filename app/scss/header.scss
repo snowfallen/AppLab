@@ -1,0 +1,138 @@
+@import'fonts.scss';
+header{
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    margin: 93px 0 0 0;
+    width: 73%;
+    height: 57px;
+    align-items: center;
+    text-align: center;
+    #logo{
+        display: flex;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        #app{
+            font-size: calc(10px + 20 * (100vw / 1600));
+            color: #FCAE61;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+        #lab{
+            font-size: calc(10px + 20 * (100vw / 1600));
+            color: #242F51;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+    }
+    #container-menu{
+        display: flex;
+        align-items: center;
+        menu{
+            display: flex;
+            align-items: center;
+            li{
+                a{
+                    font-family: 'Poppins', sans-serif;
+                    font-size: calc(12px + 4 * (100vw / 1600));
+                    color: black;
+                    padding:  0 0 0 38px ;
+                }
+            }
+            #btn-tryfree{
+                padding: 16.5px 41px;
+                background-color:#2500F9;
+                border-radius: 40px;
+                margin-left: 38px;
+                a{  
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 700;
+                    padding: 0;
+                    color:white;
+                }
+            }
+        }
+    }
+    .burger{
+        display: none;
+        width: 25px;
+        height: 25px;
+        &__line{
+            transition: 0.5s;
+            width: 20px;
+            height: 2px;
+            background-color:#5f291a;
+            border-radius: 2%;
+            margin: 2.5px 0px;
+            transform-origin: left top;
+        }
+        .burger__line:nth-child(2){
+            transform-origin: left bottom;
+        }
+    }
+    .menu-burger{
+        height: 0;
+        width: 100vw;
+        overflow: hidden;
+        background-color: #242F51;
+        position: absolute;
+        top:57px;
+        left: -5.5%;        
+        transition: all 1s;
+        &.active{  
+            position: absolute;
+            top:57;
+            left: -5.5%;   
+            transition: all 1s;
+            height: 250px;
+            display: block;
+        }
+        menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 250px;
+            li{
+                a{
+                    font-family: "Bebas";
+                    text-transform: uppercase   ;
+                    color: #B9B9B9;
+                    font-size: calc(14px + 2 * (100vw / 1400));
+                &.active{
+                    color: #E8603C;
+                }
+                }
+            }
+            .arrow{
+                display: flex;
+                flex-direction: row;
+                width: 35px;
+                height: 35px;
+                align-items: center;
+                position: relative;
+                #arrow-left{
+                    transition: 0.5s;
+                    transform: rotateZ(45deg);
+                    position: absolute;
+                    left: 4px;
+                }
+                #arrow-rigth{
+                    transition: 0.5s;
+                    transform: rotateZ(-45deg);
+                    position: absolute;
+                    left: 13px;
+                }
+                .arrow__line{
+                    width: 15px;
+                    height: 2.5px;
+                    background-color: #d6cecb;
+                    &.active{
+                        background-color: rgb(0, 0, 0);
+                    }
+                }
+            }
+        }
+    }
+}
